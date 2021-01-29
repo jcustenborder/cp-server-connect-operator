@@ -1,5 +1,6 @@
 FROM confluentinc/cp-server-connect-operator:5.5.3.0-ubi8
 LABEL maintainer="Jeremy Custenborder jcustenborder@gmail.com"
+USER root
 RUN confluent-hub install --no-prompt C0urante/kafka-connect-reddit:0.1.2
 RUN confluent-hub install --no-prompt confluentinc/kafka-connect-activemq:10.1.0
 RUN confluent-hub install --no-prompt confluentinc/kafka-connect-activemq-sink:1.1.6
@@ -23,3 +24,4 @@ RUN confluent-hub install --no-prompt jcustenborder/kafka-connect-transform-fix:
 RUN confluent-hub install --no-prompt jcustenborder/kafka-connect-transform-maxmind:0.1.0.10
 RUN confluent-hub install --no-prompt jcustenborder/kafka-connect-transform-xml:0.1.0.20
 RUN confluent-hub install --no-prompt jcustenborder/kafka-connect-twitter:0.3.33
+USER 1001
