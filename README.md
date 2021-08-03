@@ -6,6 +6,7 @@ The following tags of this image are available. Tags are based on the image they
 
 | Image | Version | Branch |
 |-------|---------|--------|
+| confluentinc/cp-server-connect-operator | 6.1.2.1 | [6.1.2.1](https://github.com/jcustenborder/cp-server-connect-operator/tree/6.1.2.1) |
 | confluentinc/cp-server-connect-operator | 6.1.0.0 | [6.1.0](https://github.com/jcustenborder/cp-server-connect-operator/tree/6.1.0) |
 | confluentinc/cp-server-connect-operator | 6.0.1.0 | [6.0.1](https://github.com/jcustenborder/cp-server-connect-operator/tree/6.0.1) |
 | confluentinc/cp-server-connect-operator | 6.0.0.0 | [6.0.0](https://github.com/jcustenborder/cp-server-connect-operator/tree/6.0.0) |
