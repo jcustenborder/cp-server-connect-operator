@@ -2,12 +2,12 @@ FROM confluentinc/cp-server-connect-operator:6.1.1.0
 LABEL maintainer="Jeremy Custenborder jcustenborder@gmail.com"
 USER root
 RUN confluent-hub install --no-prompt C0urante/kafka-connect-reddit:0.1.3
-RUN confluent-hub install --no-prompt confluentinc/kafka-connect-activemq:11.0.17
+RUN confluent-hub install --no-prompt confluentinc/kafka-connect-activemq:11.0.18
 RUN confluent-hub install --no-prompt confluentinc/kafka-connect-activemq-sink:2.1.0
 RUN confluent-hub install --no-prompt confluentinc/kafka-connect-datagen:0.5.3
-RUN confluent-hub install --no-prompt confluentinc/kafka-connect-ibmmq:11.0.17
+RUN confluent-hub install --no-prompt confluentinc/kafka-connect-ibmmq:11.0.18
 RUN confluent-hub install --no-prompt confluentinc/kafka-connect-ibmmq-sink:2.1.0
-RUN confluent-hub install --no-prompt confluentinc/kafka-connect-jdbc:10.5.1
+RUN confluent-hub install --no-prompt confluentinc/kafka-connect-jdbc:10.5.2
 RUN confluent-hub install --no-prompt debezium/debezium-connector-mysql:1.9.3
 RUN confluent-hub install --no-prompt jcustenborder/kafka-config-provider-aws:0.1.2
 RUN confluent-hub install --no-prompt jcustenborder/kafka-config-provider-azure:0.1.2
